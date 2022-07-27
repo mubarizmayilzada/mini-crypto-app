@@ -1,12 +1,19 @@
-import { Provider } from 'react-redux'
+// import { Provider } from 'react-redux'
 import '../styles/globals.css'
-// import {store} from '../store'
+// import { configureStore } from "@reduxjs/toolkit";
+// import reducer from '../components/Coins/reducers'
+
 function MyApp({ Component, pageProps }) {
-  
-    return 
-    // <Provider store={store}>
-    <Component {...pageProps} />
-  // </Provider>
+
+  // const store = configureStore(
+  //       {reducer: reducer},
+  // );
+
+    return (
+      // <Provider store={store}>
+        <Component {...pageProps} />
+      // </Provider>
+    )
 }
 
 export default MyApp
